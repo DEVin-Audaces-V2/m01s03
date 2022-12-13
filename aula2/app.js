@@ -12,11 +12,11 @@ console.log(vetorExemplo, ultimo);
 // FUNÇÕES
 
 // Exemplo com matemática
-// f(x, y) = x**2 + y
-// f(2, 3) = 2**2 + 3
+// f(x, y) = x * 2 + y
+// f(2, 3) = 2 * 2 + 3
 
 function f(x, y) {
-  return x**2 + y;
+  return x * 2 + y;
 }
 
 function funcaoExemplo(x, y) {
@@ -27,7 +27,7 @@ function funcaoExemplo(x, y) {
     return;
   }
 
-  return x**2 + y;
+  return x * 2 + y;
 }
 
 const resultadoA = funcaoExemplo(2);
