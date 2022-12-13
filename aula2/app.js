@@ -52,8 +52,14 @@ function olaNome(nome, idade) {
 const texto = olaNome('Bolacha', 33);
 // console.log(texto);
 
-const exemplo = function (n) {
+// Função anônima imediatamente executada
+(function (n) {
   console.log(`Sou uma função anônima ${n}!`);
+})();
+
+// Função anônima atribuída a uma variável
+const exemplo = function (n) {
+  console.log(`Funciono mesmo em uma variável ${n}!`);
 };
 
 exemplo(6666);
