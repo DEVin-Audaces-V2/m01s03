@@ -121,12 +121,13 @@ const objetoC = Object.freeze({ nome: "Teste" });
 
 console.log(objetoB);
 
-// EXEMPLOS DE ARRAYS E OBJETOS MISTURADOS
+// EXEMPLOS DE ALTERAÇÕES POR REFERÊNCIAS
+let numero = 1; // referência direta para 1
+let numeroArray = [2]; // referência para endereço do array
 
-let numero = [6];
+const obj = { n: numero, nA: numeroArray };
 
-const obj = { n: numero };
-
-numero[0] = 8;
+numero = 333; // altera numero mas não obj.n
+numero[0] = 444; // altera numeroArray e obj.nA
 
 console.log({ obj, numero });
