@@ -33,8 +33,8 @@ function funcaoExemplo(x, y) {
 const resultadoA = funcaoExemplo(2);
 const resultadoB = funcaoExemplo(5, 8);
 
-console.log(resultadoA);
-console.log(resultadoB);
+//console.log(resultadoA);
+//console.log(resultadoB);
 
 // Função sem parâmetros nem retorno
 /*
@@ -50,4 +50,10 @@ function olaNome(nome, idade) {
   return `Olá, ${nome}! Você tem ${idade} anos.`;
 }
 const texto = olaNome('Bolacha', 33);
-console.log(texto);
+// console.log(texto);
+
+const exemplo = function (n) {
+  console.log(`Sou uma função anônima ${n}!`);
+};
+
+exemplo(6666);
