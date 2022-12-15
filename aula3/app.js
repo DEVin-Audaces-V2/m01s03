@@ -109,6 +109,9 @@ function dahOi() {
   console.log("Oi!");
 }
 
+
+// Exemplo exercício
+// testa se termo existe em texto
 function procuraTermo(parametros) {
   const texto = parametros.texto;
   const termo = parametros.termo;
