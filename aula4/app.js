@@ -1,6 +1,6 @@
 console.log("Aula 4");
 
-// EXEMPLO REST
+// EXEMPLO REST (declaração de função)
 
 // function somaTudo(a, b, ...vetor) {
 const somaTudo = (a, b, ...vetor) => {
@@ -37,7 +37,63 @@ const vetorC = [...vetorB, ...vetorA];
 
 // EXEMPLO SPREAD (objeto)
 const objA = { a: 1, b: 2, c: 3 };
-
+// dependendo da ordem em que chaves iguais
+// forem acrescentadas as últimas tem prioridade
 const objB = { b: 44, ...objA, c: 55, d: 66 };
+// console.log(objB);
 
-console.log(objB);
+
+// EXEMPLO DESTRUCTURING (array)
+const vetorD = ["Romeu", 30, "Programador", "Mentor"];
+
+const [batata, arroz, ...feijao] = vetorD;
+//console.log({ batata, arroz, feijao });
+
+
+// EXEMPLO DESTRUCTURING (array/parametro)
+function coordenadas([x, ...r], extra) {
+  console.log({ x, r, extra });
+}
+
+const ponto = [1, 2, 3]
+//coordenadas(ponto, false);
+
+// EXEMPLO DESTRUCTURING (object)
+const objetoC = {
+  nome: "Romeu",
+  idade: 30,
+  ocupacao: ["Programador", "Mentor"]
+};
+
+const { nome, ...info } = objetoC;
+
+//console.log({ nome, info });
+
+function exibePessoa(props) {
+  const { nome, idade, ocupacao } = props;
+
+  console.log(nome, idade, ocupacao);
+}
+
+//exibePessoa(objetoC)
+
+
+// Exemplo destruct e map
+const multiplicar = (multip, ...numeros) => {
+  console.log({ numeros });
+  return numeros.map((n) => {
+    return multip * n;
+  });
+}
+
+
+// chamada da função
+const resultado = multiplicar(2, 4, 3, 1, 8);
+// [8, 6, 2, 16]
+
+console.log(resultado);
+
+
+const [...r] = "teste";
+
+console.log({ r });
