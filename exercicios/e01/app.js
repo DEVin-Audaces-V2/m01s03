@@ -2,7 +2,8 @@ console.log('e01-s03-m1');
 
 // Resolução:
 
-function procuraMinMax(numeros) {
+// function procuraMinMax(numeros) {
+const procuraMinMax = (numeros) => {
   if (Array.isArray(numeros) && numeros.length > 0) {
     let maior = numeros[0];
     let menor = numeros[0];
