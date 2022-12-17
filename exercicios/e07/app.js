@@ -8,14 +8,18 @@ const ada = {
   profissao: 'matemática'
 };
 
-// function montaMensagem(pessoa) {
-//   const { nome, idade, profissao } = pessoa;
-//   return `Esta é ${nome}, tem ${idade} anos e é ${profissao}.`;
-// }
+/*
+function montaMensagem(pessoa) {
+  const { nome, idade, profissao } = pessoa;
+  return `Esta é ${nome}, tem ${idade} anos e é ${profissao}.`;
+}
+*/
 
-// function montaMensagem({ nome, idade, profissao }) {
-//   return `Esta é ${nome}, tem ${idade} anos e é ${profissao}.`;
-// }
+/*
+function montaMensagem({ nome, idade, profissao }) {
+  return `Esta é ${nome}, tem ${idade} anos e é ${profissao}.`;
+}
+*/
 
 const montaMensagem = ({ nome, idade, profissao }) => `Esta é ${nome}, tem ${idade} anos e é ${profissao}.`;
 
