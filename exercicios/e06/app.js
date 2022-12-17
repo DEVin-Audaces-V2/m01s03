@@ -3,7 +3,7 @@ console.log('e06-s03-m1');
 // Resolução:
 
 
-function verificaPalindromo(texto) {
+function verificaPalindromoFor(texto) {
   // ana, radar, osso
   const meio = texto.length / 2;
   const fim = texto.length - 1;
@@ -16,6 +16,9 @@ function verificaPalindromo(texto) {
 
   return true;
 }
+
+// reduzindo para arrow function com spread, reverse e join
+const verificaPalindromo = t => [...t].reverse().join('') === t;
 
 const teste0 = verificaPalindromo("osso");
 console.log(teste0);
